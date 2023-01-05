@@ -2,7 +2,7 @@ import styles from "../styles/Iphone.module.css"
 
 export default function Iphone() {
     return (
-        <div className={styles.iphone}>
+        <section className={styles.iphone}>
             <div className={styles.iphoneFront}>
                 <div className={styles.frame}></div>
                 <div className={styles.antenas}>
@@ -25,6 +25,6 @@ export default function Iphone() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
