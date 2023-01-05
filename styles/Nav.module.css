@@ -1,0 +1,24 @@
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--nav-height);
+    background-color: ghostwhite;
+    border-bottom: 1px solid gainsboro;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    padding: 0;
+    justify-content: center;
+    margin:0;
+    align-items: center;
+    height: 100%;
+}
+
+.nav li {
+    list-style-type: none;
+}
