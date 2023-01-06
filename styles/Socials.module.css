@@ -1,0 +1,13 @@
+.socials {
+    padding:4rem;
+    display:flex;
+    flex-direction:row;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.socials svg {
+    /* color:red; */
+    width: 5rem;
+    height: 5rem;
+}

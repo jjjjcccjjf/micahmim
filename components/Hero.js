@@ -1,11 +1,13 @@
+import { useState, useEffect } from "react"
+// import useSanityClient from "../hooks/useSanityClient.js"
 import styles from '../styles/Hero.module.css'
 
-export default function Hero() {
+export default function Hero({ heroHeading, heroParagraph, heroCTA }) {
     return (
         <main className={styles.hero}>
-            <h1>Hi! I'm Hicami.</h1>
-            <p>Ullamco laborum dolore ad consequat eu aute ex. Occaecat ad non irure est ea labore. Duis et in exercitation dolor ex ullamco Lorem proident irure. Est minim aliqua mollit occaecat exercitation tempor dolor reprehenderit do elit.</p>
-            <p>Check out my works below!</p>
+            <h1>{heroHeading}</h1>
+            <p>{heroParagraph}</p>
+            <p>{heroCTA}</p>
         </main>
     )
 }

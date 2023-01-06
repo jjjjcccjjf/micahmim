@@ -21,7 +21,9 @@ export default function Gallery() {
         <section className={styles.gallery}>
 
             {images.length ? images.map(image =>
-                <figure><Image key={image.id} src={image.media_url} fill={true} alt={image.caption}></Image></figure>
+                <figure key={image.id}><Image  src={image.media_url} fill={true} sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw" alt={image.caption}></Image></figure>
             ) : <p>Oops... No images found</p>}
         </section>
     )
