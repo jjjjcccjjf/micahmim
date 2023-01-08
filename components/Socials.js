@@ -4,6 +4,7 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import styles from "../styles/Socials.module.css"
+import utils from "../styles/Utils.module.css"
 
 
 export default function Socials() {
@@ -16,8 +17,8 @@ export default function Socials() {
                     <p>Something else</p>
                 </div>
                 <div className={styles.socialContent}>
-                    <p>Brush strokes on canvas,<br></br>Creations of my heart and soul,<br></br>For sale, now behold.</p>
-                    <a href="mailto:xxx@gmail.com">Hire me!</a>
+                    <p className={styles.haiku}>Brush strokes on canvas,<br></br>Creations of my heart and soul,<br></br>For sale, now behold.</p>
+                    <a className={utils.buttonDefault} href="mailto:jinsei0004@gmail.com">Hire me! (pls)</a>
                 </div>
                 <div className={styles.socialFooter}>
                     <p>Artist / Illustrator</p>
@@ -27,7 +28,7 @@ export default function Socials() {
                         <FontAwesomeIcon icon={faInstagram} />
                         <FontAwesomeIcon icon={faFacebook} />
                     </div>
-                    <p>Something else</p>
+                    <p><a className={utils.underlineHover} href="#top">Back to top &uarr;</a></p>
                 </div>
 
             </div>

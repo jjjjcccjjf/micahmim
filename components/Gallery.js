@@ -9,7 +9,7 @@ export default function Gallery({ gallery }) {
     const { urlFor } = useContext(AppContext)
 
     return (
-        <section className={styles.gallery}>
+        <section className={styles.gallery} id="gallery">
 
             {gallery.length ? gallery.map(item =>
                 <figure key={item._id}><Image src={urlFor(item.image).url()} fill={true} sizes="(max-width: 768px) 100vw,

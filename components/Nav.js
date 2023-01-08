@@ -2,7 +2,7 @@ import styles from '../styles/Nav.module.css';
 
 export default function Nav() {
     return (
-        <nav className={styles.nav}>
+        <nav className={styles.nav} id="top">
             <ul>
                 <li>Logo</li>
                 <li>Another</li>

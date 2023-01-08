@@ -1,0 +1,23 @@
+.buttonDefault {
+    font-size: 1.25rem;
+    border: 1px solid var(--main-font-color);
+    padding: .5rem 5rem;
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.buttonDefault:hover {
+    background-color: var(--main-font-color);
+    color: ghostwhite;
+}
+
+.underlineHover:hover {
+    text-decoration: underline;
+}
+
+@keyframes invert {
+    from {
+        background-color: unset;
+        color: var(--main-font-color);
+    }
+
+}
