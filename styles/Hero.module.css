@@ -65,13 +65,17 @@
         display: block;
         width: 40%;
         position: relative;
-        height: 700px;
+        height: 650px;
         margin: auto;
     }
 
     .hero .left {
         width: 60%;
-        display:flex;
+        display: flex;
         flex-direction: column;
+    }
+
+    .hero section {
+        width: 80%;
     }
 }
