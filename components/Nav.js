@@ -4,6 +4,10 @@ export default function Nav() {
     return (
         <nav className={styles.nav}>
             <ul>
+                <li>Logo</li>
+                <li>Another</li>
+            </ul>
+            <ul>
                 <li>Back to top</li>
                 <li>Gallery</li>
                 <li>Socials</li>

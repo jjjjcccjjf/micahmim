@@ -10,7 +10,7 @@ export default function Home({ heroSection, gallery }) {
         <>
             <Nav></Nav>
             <Hero {...heroSection}></Hero>
-            <Iphone ></Iphone>
+            {/* <Iphone ></Iphone> */}
             <Gallery gallery={gallery}></Gallery>
             <Socials></Socials>
             {/* <ContactForm></ContactForm>  */}
