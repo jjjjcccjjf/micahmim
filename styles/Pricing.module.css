@@ -1,14 +1,47 @@
 .pricingSection {
-    height: 100vh;
     width: 100%;
     padding: var(--nav-height) 10%;
 }
 
-.pricingSection h2, .pricingSection p {
+.pricingSectionHeading,
+.pricingSectionSubHeading {
     width: max-content;
     margin: 1rem auto;
 }
 
 .pricing {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+}
+
+.pricing {
+    overflow-y: scroll; /* For horiz. scroll, otherwise overflow-y: scroll; */
+
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    scrollbar-width: none;
+}
+
+.pricing::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+
+.imageContainer {
+    height: 400px;
+    width: 200px;
+    position: relative;
+}
+
+.pricingContainer {
+    width: 200px;
+}
+
+@media (min-width:1024px) {
+
+    .pricing {
+        flex-direction: row;
+    }
+
 }

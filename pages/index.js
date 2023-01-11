@@ -9,7 +9,7 @@ import SuperHeading from "../components/SuperHeading.js"
 import client from "../helpers/sanityClient.js"
 
 
-export default function Home({ heroSection, gallery }) {
+export default function Home({ heroSection, gallery, pricing }) {
     return (
         <>
             <Nav></Nav>
@@ -17,7 +17,7 @@ export default function Home({ heroSection, gallery }) {
             <Hero {...heroSection}></Hero>
             {/* <Iphone ></Iphone> */}
             <Gallery gallery={gallery}></Gallery>
-            <Pricing gallery={gallery}></Pricing>
+            <Pricing pricing={pricing}></Pricing>
             <Socials></Socials>
             {/* <ContactForm></ContactForm>  */}
             {/* <Footer></Footer>  */}
@@ -29,11 +29,13 @@ export async function getStaticProps() {
 
     const heroSection = await client.fetch(`*[_type=="heroSection"][0]{heroHeading,heroParagraph,heroCTA}`);
     const gallery = await client.fetch(`*[_type=="gallery"]`);
+    const pricing = await client.fetch(`*[_type=="pricing"]`);
 
     return {
         props: {
             heroSection,
-            gallery
+            gallery,
+            pricing
         }
     };
 }
