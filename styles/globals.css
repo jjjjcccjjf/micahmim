@@ -1,7 +1,11 @@
 :root {
-  --nav-height: 3rem;
+  --nav-height: 4rem;
   --main-font-color: #292929;
-  --main-bg-color: ghostwhite;
+  /* --main-bg-color: #F2EFEB; */
+  --main-bg-color: #fafafa;
+  --font-sm: 0px;
+  --font-md: 0px;
+  --font-lg: 0px;
 }
 
 html,
@@ -14,6 +18,7 @@ body {
   font-size: 16px;
   background-color: var(--main-bg-color);
   color: var(--main-font-color);
+  overflow-x: hidden;
 }
 
 a {

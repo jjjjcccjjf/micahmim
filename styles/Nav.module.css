@@ -4,7 +4,7 @@
     left: 0;
     right: 0;
     height: var(--nav-height);
-    background-color: ghostwhite;
+    background-color: var(--main-bg-color);
     border-bottom: 1px solid gainsboro;
 }
 
@@ -29,24 +29,15 @@
 
 
 @media (min-width:1024px) {
-    .nav ul:nth-of-type(1) {
-        justify-content: flex-start;
-        padding-left: 15%;
-        display: block;
-    }
 
     .nav {
         justify-content: space-between;
         display: flex;
+        padding: 0 10%;
     }
 
     .nav ul:nth-of-type(1) {
         display: flex;
-    }
-
-    .nav ul:nth-of-type(2) {
-        justify-content: flex-end;
-        padding-right: 15%;
     }
 
 }

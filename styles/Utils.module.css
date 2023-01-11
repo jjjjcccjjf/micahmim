@@ -14,6 +14,17 @@
     text-decoration: underline;
 }
 
+.boldText {
+    font-weight: bold;
+}
+
+
+.superHeading {
+    width: 100%;
+    text-align: center;
+}
+
+
 @keyframes invert {
     from {
         background-color: unset;

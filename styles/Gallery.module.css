@@ -1,22 +1,22 @@
-.gallery {
+/* .gallery {
     padding-top: 4rem;
     justify-items: center;
     gap: 0.6rem;
-    width: 75%;
-    display: flex;
+    width: 80%;
     margin: 0 auto;
+    display: flex;
     flex-wrap: wrap;
+
     flex-direction: row;
     justify-content: center;
-    /* justify-content: flex-start; */
 }
 
-.gallery figure {
-    min-width: 200px;
-    min-height: 200px;
+.gallery .figure {
+    min-height: 600px;
     margin: 0;
     padding: 0;
     position: relative;
+
 }
 
 .gallery figure img {
@@ -27,8 +27,12 @@
 }
 
 @media (min-width:1024px) {
-    .gallery figure {
-        min-width: 300px;
-        min-height: 300px;
-    }
+
+} */
+
+.gallery ul {
+    width: 80%;
+    margin: 0 auto;
+    padding: var(--nav-height) 0;
 }
+ 
