@@ -1,6 +1,6 @@
 import styles from "../styles/Gallery.module.css"
 import Image from "next/image"
-import { useContext } from "react"
+import { useContext, useRef, useEffect, useState } from "react"
 import { AppContext } from "../context/AppContext"
 
 import ImageList from '@mui/material/ImageList';
@@ -8,8 +8,32 @@ import ImageListItem from '@mui/material/ImageListItem';
 
 export default function Gallery({ gallery }) {
 
+    const [galleryCols, setGalleryCols] = useState(4)
+
+    const imageListRef = useRef()
 
     const { urlFor } = useContext(AppContext)
+
+    useEffect(() => {
+        // set the initial number of items based on default window width
+        if (window.innerWidth < 1024) {
+            setGalleryCols(2);
+        }
+
+        function handleWindowResize() {
+            if (window.innerWidth < 1024) {
+                setGalleryCols(2)
+            } else {
+                setGalleryCols(4)
+            }
+        }
+
+        window.addEventListener("resize", handleWindowResize, true)
+
+        return () => {
+            window.removeEventListener("resize", handleWindowResize, true)
+        }
+    }, [])
 
     return (
         <>
@@ -23,7 +47,7 @@ export default function Gallery({ gallery }) {
             </section> */}
             <section className={styles.gallery}>
 
-                <ImageList variant="masonry" cols={4} gap={8}>
+                <ImageList variant="masonry" cols={galleryCols} gap={8} ref={imageListRef}>
                     {gallery.map((item, index) => (
                         <ImageListItem key={index}>
                             {/* <Image src={urlFor(item.image).auto('format').fit('max').width(720).quality(80).url()} fill alt={item.alt}></Image> */}

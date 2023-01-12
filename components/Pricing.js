@@ -35,9 +35,9 @@ function PricingSlide(props) {
                                 loading="lazy"
                             /> */}
                 <div className={styles.imageContainer}>
-                    <Image src={urlFor(item.image).quality(80).url()} objectFit="contain" fill alt={item.heading}></Image>
+                    <Image src={urlFor(item.image).quality(80).url()} fill alt={item.heading}></Image>
                 </div>
-                <div>
+                <div className={styles.headingPricing}>
                     <p>{item.heading}</p>
                     <p>{item.price}</p>
                 </div>

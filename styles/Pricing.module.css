@@ -13,11 +13,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 600px;
+    /* height: 600px; */
 }
 
-.pricing {
-    overflow-y: scroll; /* For horiz. scroll, otherwise overflow-y: scroll; */
+/* .pricing {
+    overflow-y: scroll;  
 
     -ms-overflow-style: none;
     overflow: -moz-scrollbars-none;
@@ -25,17 +25,33 @@
 }
 
 .pricing::-webkit-scrollbar {
-    display: none;  /* Safari and Chrome */
-}
+    display: none;  
+} */
 
 .imageContainer {
     height: 400px;
-    width: 200px;
+    width: 400px;
     position: relative;
 }
 
+.imageContainer img {
+    object-fit: cover;
+}
+
 .pricingContainer {
-    width: 200px;
+    /* width: 200px; */
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:min-content;
+}
+
+.headingPricing {
+    display:flex;
+    justify-content: space-between;
+    width:100%;
 }
 
 @media (min-width:1024px) {
