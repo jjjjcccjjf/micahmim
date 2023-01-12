@@ -41,7 +41,7 @@ function PricingSlide(props) {
                     <p>{item.heading}</p>
                     <p>{item.price}</p>
                 </div>
-                <div>
+                <div className={styles.pricingDescription}>
                     <p>{item.description}</p>
                 </div>
             </figure>

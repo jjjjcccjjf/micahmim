@@ -9,10 +9,21 @@
     margin: 1rem auto;
 }
 
+.pricingSectionHeading {
+    font-size: var(--font-lg)
+}
+
+.pricingSectionSubHeading {
+    font-size: var(--font-md)
+}
+
 .pricing {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 4rem auto;
     /* height: 600px; */
 }
 
@@ -45,19 +56,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:min-content;
+    width: min-content;
+    justify-content: center;
+    /* margin: 0 auto; */
 }
 
 .headingPricing {
-    display:flex;
-    justify-content: space-between;
-    width:100%;
+    display: flex;
+    width: 100%;
+}
+
+.headingPricing p {
+    font-size: var(--font-md);
+    margin: 0;
+    font-weight: bold;
+}
+
+.pricingDescription p {
+    margin: 0;
 }
 
 @media (min-width:1024px) {
 
     .pricing {
         flex-direction: row;
+    justify-content: space-between;
+
     }
 
 }

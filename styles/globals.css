@@ -3,9 +3,10 @@
   --main-font-color: #292929;
   /* --main-bg-color: #F2EFEB; */
   --main-bg-color: #fafafa;
-  --font-sm: 0px;
-  --font-md: 0px;
-  --font-lg: 0px;
+  --font-sm: 1rem;
+  --font-md: 1.5rem;
+  --font-lg: 3rem;
+  --font-xl: 5rem;
 }
 
 html,
