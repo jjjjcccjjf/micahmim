@@ -24,6 +24,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 4rem auto;
+    row-gap: 2rem;
     /* height: 600px; */
 }
 
@@ -58,29 +59,31 @@
     align-items: center;
     width: min-content;
     justify-content: center;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     /* margin: 0 auto; */
 }
 
 .headingPricing {
     display: flex;
+    justify-content: space-between;
     width: 100%;
 }
 
 .headingPricing p {
     font-size: var(--font-md);
-    margin: 0;
+    margin: 1.25rem 1rem 0 1rem;
     font-weight: bold;
 }
 
 .pricingDescription p {
-    margin: 0;
+    margin: 1.25rem;
 }
 
 @media (min-width:1024px) {
 
     .pricing {
         flex-direction: row;
-    justify-content: space-between;
+        justify-content: space-between;
 
     }
 

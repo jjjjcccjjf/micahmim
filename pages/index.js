@@ -4,6 +4,7 @@ import Iphone from "../components/Iphone.js"
 import Gallery from "../components/Gallery.js"
 import Socials from "../components/Socials.js"
 import Pricing from "../components/Pricing.js"
+import Footer from "../components/Footer.js"
 import SuperHeading from "../components/SuperHeading.js"
 
 import client from "../helpers/sanityClient.js"
@@ -20,7 +21,7 @@ export default function Home({ heroSection, gallery, pricing }) {
             <Pricing pricing={pricing}></Pricing>
             <Socials></Socials>
             {/* <ContactForm></ContactForm>  */}
-            {/* <Footer></Footer>  */}
+            <Footer></Footer> 
         </>
     )
 }

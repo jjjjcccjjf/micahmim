@@ -2,8 +2,27 @@ import Image from "next/image"
 import styles from '../styles/Hero.module.css'
 import utils from '../styles/Utils.module.css'
 import chimes from "../public/chimes.jpg"
+import { useEffect, useRef } from "react"
 
 export default function Hero({ heroParagraph, heroCTA }) {
+
+    const parallaxItem = useRef()
+    useEffect(() => {
+        function parallax(event) {
+                const position = parallaxItem.current.getAttribute("value");
+                const x = (window.innerWidth - event.pageX * position) / 90;
+                const y = (window.innerHeight - event.pageY * position) / 90;
+
+                parallaxItem.current.style.transform = `translateX(${x}px) translateY(${y}px)`;
+        }
+
+        document.addEventListener("mousemove", parallax);
+
+        return () => {
+            document.removeEventListener("mousemove", parallax)
+        }
+    }, [])
+
     return (
         <main className={styles.hero}>
             <section>
@@ -18,6 +37,8 @@ export default function Hero({ heroParagraph, heroCTA }) {
               33vw" alt="chimes" priority={true}></Image>
                     {/* <Image src="/rb.jpg" fill={true}></Image> */}
                 </div>
+
+                <span value="5" ref={parallaxItem}></span>
             </section>
         </main>
     )

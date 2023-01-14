@@ -28,6 +28,18 @@
     width: 80%;
     margin: 0 auto;
     align-items: flex-end;
+    overflow: hidden;
+}
+
+.hero section span {
+    top: 70%;
+    left: 70%;
+    background: blue;
+    z-index: 3;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
 }
 
 .hero .left {

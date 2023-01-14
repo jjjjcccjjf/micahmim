@@ -24,6 +24,15 @@
     text-align: center;
 }
 
+.footer {
+    text-align:center;
+}
+
+.footer a {
+    text-decoration: underline;
+    font-weight:600;
+}
+
 
 @keyframes invert {
     from {
