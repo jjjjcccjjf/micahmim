@@ -1,11 +1,14 @@
 :root {
   --nav-height: 4rem;
-  --main-font-color: #292929;
+  --main-font-color: #1c1c1c;
+  /* --main-font-color: #292929; */
   /* --main-bg-color: #F2EFEB; */
   --main-bg-color: #fafafa;
   --font-sm: 1rem;
-  --font-md: 1.5rem;
+  --font-md: 1.25rem;
+  --font-md-0: 1.75rem;
   --font-lg: 3rem;
+  --font-lg-2: 4rem;
   --font-xl: 5rem;
 }
 

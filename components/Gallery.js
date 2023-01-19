@@ -45,7 +45,7 @@ export default function Gallery({ gallery }) {
               33vw" alt={item.alt}></Image></figure>
                 ) : <p>Oops... No images found</p>}
             </section> */}
-            <section className={styles.gallery}>
+            <section className={styles.gallery} id="gallery">
 
                 <ImageList variant="masonry" cols={galleryCols} gap={8} ref={imageListRef}>
                     {gallery.map((item, index) => (

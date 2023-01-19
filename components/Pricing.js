@@ -9,7 +9,7 @@ export default function Pricing({ pricing }) {
     return (
         <>
             <section className={styles.pricingSection}>
-                <h2 className={styles.pricingSectionHeading}>Comms comms comms</h2>
+                <h2 className={styles.pricingSectionHeading}>Comms comms comms!</h2>
                 <p className={styles.pricingSectionSubHeading}>Subheading Enim ipsum sit ex aliquip reprehenderit ex ex labore.</p>
                 <div className={styles.pricing}>
                     {pricing.map((item, index) => (
@@ -28,12 +28,6 @@ function PricingSlide(props) {
     return (
         <>
             <figure key={index} className={styles.pricingContainer}>
-                {/* <img
-                                src={`${urlFor(item.image).quality(80).url()}`}
-                                srcSet={`${urlFor(item.image).quality(80).url()}`}
-                                alt={item.alt}
-                                loading="lazy"
-                            /> */}
                 <div className={styles.imageContainer}>
                     <Image src={urlFor(item.image).quality(80).url()} fill alt={item.heading}></Image>
                 </div>

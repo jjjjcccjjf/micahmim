@@ -10,7 +10,8 @@
 }
 
 .pricingSectionHeading {
-    font-size: var(--font-lg)
+    font-size: var(--font-lg);
+    font-weight: normal;
 }
 
 .pricingSectionSubHeading {
