@@ -5,7 +5,9 @@
   /* --main-bg-color: #F2EFEB; */
   --main-bg-color: #fafafa;
   --font-sm: 1rem;
+  --font-sm-0: 0.75rem;
   --font-md: 1.25rem;
+  --font-md-1: 1.5rem;
   --font-md-0: 1.75rem;
   --font-lg: 3rem;
   --font-lg-2: 4rem;
@@ -20,9 +22,13 @@ body {
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
   font-family: 'Quicksand', sans-serif;
   font-size: 16px;
-  background-color: var(--main-bg-color);
+  /* background-color: var(--main-bg-color); */
+  background-image: url("/bg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: var(--main-font-color);
-  overflow-x: hidden;
 }
 
 a {

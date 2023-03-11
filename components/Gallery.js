@@ -16,12 +16,16 @@ export default function Gallery({ gallery }) {
 
     useEffect(() => {
         // set the initial number of items based on default window width
-        if (window.innerWidth < 1024) {
+        if (window.innerWidth <= 320) {
+            setGalleryCols(1)
+        } else if (window.innerWidth <= 1024) {
             setGalleryCols(2);
         }
 
         function handleWindowResize() {
-            if (window.innerWidth < 1024) {
+            if (window.innerWidth <= 320) {
+                setGalleryCols(1)
+            } else if (window.innerWidth <= 1024) {
                 setGalleryCols(2)
             } else {
                 setGalleryCols(4)

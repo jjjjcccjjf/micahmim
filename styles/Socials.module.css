@@ -7,13 +7,14 @@
 }
 
 .socials {
-    background-color: #D9B4C1;
+    /* background-color: #D9B4C1; */
+    background-color: #ffc1d7;
     margin: 0 auto;
     height: 100%;
     width: 100%;
     transform: scale(1, 1);
     border-radius: 0%;
-    transition: transform 0.25s ease-in-out, border-radius 0.25s ease-in-out;
+    transition: transform 0.5s ease-in-out, border-radius 0.25s ease-in-out;
 }
 
 .socialIcons {
@@ -79,7 +80,7 @@
         height: 100vh;
     }
     .socials:hover {
-        transform: scale(0.96, 0.96);
+        transform: scale(0.88, 0.88);
         border-radius: 1%;
     }
 

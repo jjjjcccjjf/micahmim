@@ -1,34 +1,7 @@
-/* .gallery {
-    padding-top: 4rem;
-    justify-items: center;
-    gap: 0.6rem;
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
 
-    flex-direction: row;
-    justify-content: center;
+.gallery {
+    background-color: var(--main-bg-color);
 }
-
-.gallery .figure {
-    min-height: 600px;
-    margin: 0;
-    padding: 0;
-    position: relative;
-
-}
-
-.gallery figure img {
-    object-fit: cover;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 3%;
-}
-
-@media (min-width:1024px) {
-
-} */
 
 .gallery ul {
     width: 80%;
