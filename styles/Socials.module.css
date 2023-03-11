@@ -79,6 +79,7 @@
     .socialsSection {
         height: 100vh;
     }
+
     .socials:hover {
         transform: scale(0.88, 0.88);
         border-radius: 1%;
@@ -92,9 +93,46 @@
     .socialHeader {
         font-size: var(--font-md);
     }
-    
-    
+
+
     .socialFooter {
         font-size: var(--font-md);
+    }
+}
+
+@media (max-width:320px) {
+
+    .socialContent .haiku {
+        font-size: var(--font-md-0);
+        margin: var(--font-md-0) var(--font-md-0);
+    }
+
+
+    .socialHeader {
+        font-size: var(--font-md);
+        justify-content: center;
+    }
+
+    .socialHeader p:not(:first-of-type){
+        display: none;
+    }
+
+    
+    .socialFooter p {
+        display: none;
+    }
+ 
+    .socialContent a {
+        padding: 0.75rem 3.75rem;
+        margin: 0 0 var(--font-md-0) 0;
+    }
+
+    .socialIcons {
+        margin: 1.5rem auto;
+        gap: 1rem;
+    }
+
+    .socialsSection {
+        height: 100%
     }
 }
