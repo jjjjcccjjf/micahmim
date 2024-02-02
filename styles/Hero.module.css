@@ -111,6 +111,9 @@
 
 }
 
-@media (max-width:320px) { 
-
+@media (max-width:320px) {
+    .hero .left p a {
+        padding: 0.9rem 1rem;
+        font-size: var(--font-md);
+    }
 }
